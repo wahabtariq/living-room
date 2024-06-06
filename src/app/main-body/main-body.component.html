@@ -1,0 +1,9 @@
+<div class="main-body">
+  <h1>Client Description</h1>
+  <p>
+    {{showFullDescription ? description : (description | slice:0:100) + '...'}}
+    <a href="#" (click)="toggleDescription($event)">{{showFullDescription ? 'show less' : 'show more'}}</a>
+  </p>
+  <h2>Items</h2>
+  <app-item></app-item> <!-- Repeat this for each item you have -->
+</div>

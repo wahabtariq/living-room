@@ -1,0 +1,5 @@
+.main-body {
+  margin-top: 80px; /* Adjust based on the height of the header */
+  margin-bottom: 60px; /* Adjust based on the height of the footer */
+  padding: 20px;
+}
