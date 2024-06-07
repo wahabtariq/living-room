@@ -1,8 +1,47 @@
-<div class="item-row">
-  <img src="path-to-image" alt="Item Image">
-  <div class="item-details">
-    <p>Item Description</p>
-    <p>Quantity: 10</p>
-    <p>Price: $100</p>
+<mat-card class="living-card">
+  <mat-card-header>
+    <div class="img-wrapper">
+      <img mat-card-sm-image src="../../assets/images/sony-tv.png" >
+    </div>
+    <mat-card-title-group>
+      <mat-card-title class="card-title">Sonny xbr243r9003</mat-card-title>
+      <mat-card-subtitle class="card-subtitle">75 HDR UHD smart LED TV</mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+
+    <p class="tertiary-heading">Recurring tax Exempt</p>
+
+    <input style="width: 25px; border: 1px solid lightgray; border-radius: 5px; margin-left: 20px;" matInput value="111">
+
+    <div class="calculation">
+      <p>$2503.00</p>
+      <p class="tertiary-heading">43% Profit</p>
+    </div>
+
+    <button class="card-icon-button" style="margin-left: 10px;" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+
+
+  </mat-card-content>
+
+  <mat-divider class="custom-divider"></mat-divider>
+
+  <div class="update-order">
+    <p class="tertiary-heading" style="color: blue; cursor: pointer;">Change order 1</p> <mat-icon style="color: blue;">keyboard_arrow_down</mat-icon>
   </div>
-</div>
+
+  <mat-divider class="custom-divider"></mat-divider>
+
+  <div style="background-color: lightgrey;">
+    <div style="display: flex; align-items: center; padding: 10px 16px; margin-left: 10px; background-color: white;">
+        <div class="img-wrapper" style="padding: 0; width: 30px; height: 30px;">
+          <img mat-card-sm-image src="../../assets/images/film-processing.jpg" >
+        </div>
+        <p class="card-title" style="font-weight: 500; font-size: 14px;">2 Attachments . $3,433.00</p>
+        <mat-icon>keyboard_arrow_down</mat-icon>
+    </div>
+  </div>
+
+</mat-card>

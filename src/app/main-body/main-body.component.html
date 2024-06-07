@@ -1,9 +1,17 @@
 <div class="main-body">
-  <h1>Client Description</h1>
+  <div style="display: flex; justify-content: space-between;">
+    <h1>Client Description</h1>
+    <p style="color: orangered; font-weight: 100; cursor: pointer;">Edit</p>
+  </div>
   <p>
-    {{showFullDescription ? description : (description | slice:0:100) + '...'}}
-    <a href="#" (click)="toggleDescription($event)">{{showFullDescription ? 'show less' : 'show more'}}</a>
+    {{showFullDescription ? description : (description | slice:0:1000) + '...'}}
+    <a href="#" (click)="toggleDescription($event)" style="color: orangered;">{{showFullDescription ? 'show less' : 'show more'}}</a>
   </p>
+  <!-- <button class="card-icon-button" style="margin-left: 10px;" mat-icon-button aria-label="Example icon button with a vertical three dot icon"> -->
+    <p style="color: orangered; font-weight: 100; cursor: pointer;">+ Add Installer Description</p>
+  <!-- </button> -->
   <h2>Items</h2>
+  <app-item></app-item> <!-- Repeat this for each item you have -->
+  <app-item></app-item> <!-- Repeat this for each item you have -->
   <app-item></app-item> <!-- Repeat this for each item you have -->
 </div>

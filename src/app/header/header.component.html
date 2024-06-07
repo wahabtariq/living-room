@@ -1,7 +1,12 @@
 <nav>
+  <div style="display: flex; align-items: center; justify-content: space-between; margin: auto; width: 90%;">
+    <mat-icon style="color: orangered;">arrow_back_ios</mat-icon>
+    <p class="card-title" style="font-weight: 500; font-size: 20px; color: white;">Living Room</p>
+    <mat-icon style="color: orangered;">more_vert</mat-icon>
+  </div>
   <ul>
-    <li><button (click)="selectTab(1)">Option 1</button></li>
-    <li><button (click)="selectTab(2)">Option 2</button></li>
-    <li><button (click)="selectTab(3)">Option 3</button></li>
+    <li><button (click)="selectTab(1)" class="header-button">Option 1</button></li>
+    <li><button (click)="selectTab(2)" class="header-button">Option 2</button></li>
+    <li><button (click)="selectTab(3)" class="header-button">Option 3</button></li>
   </ul>
 </nav>
